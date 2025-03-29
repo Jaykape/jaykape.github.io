@@ -27,6 +27,11 @@
       margin-bottom: 15px;
     }
 
+    .toggleDiv {
+        display: none;}
+
+  
+
     @media only screen and (max-width: 800px) {}
 
     @media only screen and (max-width: 500px) {}
@@ -53,7 +58,7 @@
       <li><b>Talk - Cardinals in ZF</b><br>&nbsp;&nbsp;IMS Graduate Summer School in Logic, Singapore</li>
       </p>
       <p>
-      <li><b>Paper and Talk - Some remarks on the set of injections and the set of surjections on a set</b><br>&nbsp;&nbsp;Annual Pure and Applied Mathematics Conference, Bangkok <a href="paper_apam2024.pdf">link</a></li>
+      <li><b>Paper and Talk - Some remarks on the set of injections and the set of surjections on a set</b><br>&nbsp;&nbsp;Annual Pure and Applied Mathematics Conference, Bangkok </li>
       </p>
     </div>
 
@@ -63,39 +68,32 @@
       <p>...</p>
     </div>
 
-    <div style="background-color: #efebbc; max-width: 1000px; padding-left: 7px; ">
+    <button onclick="toggle('secretdiv')" style="opacity: 0%;">push</button>
+
+    <div class="toggleDiv" id="secretdiv" style="background-color: #efebbc; max-width: 1000px; padding-left: 7px; ">
       <h3 style="margin-bottom: 2px;">Collections</h3>
       These are my collections of math info that I have collected from various sources and rewritten during my learning process.
-      <br><br>
-      <button onclick="toggle('divalggeo')" style="border: none;">Algebraic Geometry</button>
-      <br><br>
-        <div  id="divalggeo" class="coldiv">
-          &#x25C6; <a href="resourcemath/flat.html"><b>Schemes</b></a><br>
-          &#x25C6; <b>Sheaves</b><br>
-          &nbsp;&#x25C7; <a href="resourcemath/sheaves.html" style="font-size: smaller;">General</a><br>
-          &nbsp;&#x25C7; <a href="resourcemath/sheavesofmodules.html" style="font-size: smaller;">Sheaves of Modules</a><br>
-          &#x25C6; <b>Morphisms</b><br>
-          &nbsp;&#x25C7; <a href="resourcemath/flat.html" style="font-size: smaller;">General</a><br>
-          &nbsp;&#x25C7; <a href="resourcemath/flat.html" style="font-size: smaller;">Finiteness</a><br>
-          &nbsp;&#x25C7; <a href="resourcemath/flat.html" style="font-size: smaller;">Separatedness and Properness</a><br>
-          &nbsp;&#x25C7; <a href="resourcemath/flat.html" style="font-size: smaller;">Flatness</a><br>
-          &nbsp;&#x25C7; <a href="resourcemath/flat.html" style="font-size: smaller;">Flatness</a><br>
-          &nbsp;&#x25C7; <a href="resourcemath/flat.html" style="font-size: smaller;">Smoothness</a><br>
-        </div>
+      <h4>Algebraic Geometry</h4>
+     
+      &nbsp;&#x25C6; <b>Schemes</b><br>
+      &nbsp;&nbsp;&#x25C7; <a href="resourcemath/sheaves.html" style="font-size: smaller;">General</a><br>
+      &nbsp;&nbsp;&#x25C7; <a href="resourcemath/sheavesofmodules.html" style="font-size: smaller;">Sheaves of Modules</a><br>
+      &nbsp;&#x25C6; <b>Sheaves</b><br>
+      &nbsp;&nbsp;&#x25C7; <a href="resourcemath/sheaves.html" style="font-size: smaller;">General</a><br>
+      &nbsp;&nbsp;&#x25C7; <a href="resourcemath/sheavesofmodules.html" style="font-size: smaller;">Sheaves of Modules</a><br>
+      &nbsp;&#x25C6; <b>Morphisms</b><br>
+      &nbsp;&nbsp;&#x25C7; <a href="resourcemath/flat.html" style="font-size: smaller;">General</a><br>
+      &nbsp;&nbsp;&#x25C7; <a href="resourcemath/flat.html" style="font-size: smaller;">Finiteness</a><br>
+      &nbsp;&nbsp;&#x25C7; <a href="resourcemath/flat.html" style="font-size: smaller;">Separatedness and Properness</a><br>
+      &nbsp;&nbsp;&#x25C7; <a href="resourcemath/flat.html" style="font-size: smaller;">Flatness</a><br>
+      &nbsp;&nbsp;&#x25C7; <a href="resourcemath/flat.html" style="font-size: smaller;">Flatness</a><br>
+      &nbsp;&nbsp;&#x25C7; <a href="resourcemath/flat.html" style="font-size: smaller;">Smoothness</a><br>
 
-        
-        <button onclick="toggle('divnt')" style="border: none;">Number Theory</button>
-        <br><br>
-          <div  id="divnt" class="coldiv">
-            <a href="resourcemath/flat.html">ccc</a><br>
-          </div>
      <br>
 
     </div>
   </div>
 </body>
-
-
 
 <script>
   function toggle(elementId) {
@@ -107,5 +105,6 @@ if (element.style.display === "none" || element.style.display === "") {
 }
 }
 </script>
+
 
 </html>
